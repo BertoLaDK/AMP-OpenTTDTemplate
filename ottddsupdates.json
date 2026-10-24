@@ -1,19 +1,19 @@
 [
-    {
+        {
         "UpdateStageName": "OpenTTD Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://cdn.openttd.org/openttd-releases/15.3/openttd-15.3-linux-amd64.tar.gz",
+        "UpdateSourceData": "https://cdn.openttd.org/openttd-releases/15.3/openttd-15.3-linux-generic-amd64.tar.xz",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": true,
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Flatten Archive",
+        "UpdateStageName": "Extract Archive",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "bash",
-        "UpdateSourceArgs": "-c \"cd {{$FullBaseDir}} && mv openttd-*-linux-amd64/* . && rm -rf openttd-*-linux-amd64 && chmod +x openttd\"",
+        "UpdateSourceArgs": "-c \"cd {{$FullBaseDir}} && tar -xvJf openttd-15.3-linux-generic-amd64.tar.xz --strip-components=1 && rm -f openttd-15.3-linux-generic-amd64.tar.xz && chmod +x openttd\"",
         "SkipOnFailure": false
     },
     {
