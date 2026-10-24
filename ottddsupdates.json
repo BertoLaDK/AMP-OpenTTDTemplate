@@ -2,10 +2,10 @@
     {
         "UpdateStageName": "OpenTTD Download",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceArgs": "OpenTTD/OpenTTD",
-        "UpdateSourceData": "linux-amd64.tar.gz",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://cdn.openttd.org/openttd-releases/15.3/openttd-15.3-linux-amd64.tar.gz",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "OverwriteExistingFiles": true,
         "SkipOnFailure": false
     },
     {
