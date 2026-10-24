@@ -17,6 +17,15 @@
         "SkipOnFailure": false
     },
     {
+        "UpdateStageName": "OpenGFX Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://cdn.openttd.org/opengfx-releases/8.0/opengfx-8.0.zip",
+        "UpdateSourceTarget": "{{$FullBaseDir}}baseset",
+        "OverwriteExistingFiles": false,
+        "SkipOnFailure": false
+    },
+    {
         "UpdateStageName": "Create Config Directory",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "CreateDirectory",
