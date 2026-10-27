@@ -5,5 +5,12 @@
         "Ref": "ServerPort",
         "Name": "Server Port",
         "Description": "Port for game traffic"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": 3977,
+        "Ref": "ServerAdminPort",
+        "Name": "Server Admin Port",
+        "Description": "Port for server admin interface"
     }
 ]

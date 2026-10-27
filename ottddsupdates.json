@@ -26,6 +26,14 @@
         "SkipOnFailure": false
     },
     {
+        "UpdateStageName": "OpenGFX Extract",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "bash",
+        "UpdateSourceArgs": "-c \"cd {{$FullBaseDir}}baseset && unzip -q -o opengfx-8.0-all.zip && rm -f opengfx-8.0-all.zip\"",
+        "SkipOnFailure": false
+    },
+    {
         "UpdateStageName": "Create Config Directory",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "CreateDirectory",
